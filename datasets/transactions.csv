@@ -1,0 +1,90 @@
+description,category
+Foodpanda order,Food
+Restaurant lunch,Food
+Dinner with colleagues,Food
+Chaldal grocery purchase,Food
+Shwapno supermarket groceries,Food
+Coffee at Gloria Jeans,Food
+Bakery bread and snacks,Food
+KFC fried chicken meal,Food
+Burger King burger and fries,Food
+Pizza Hut delivery,Food
+Street food tea and samosa,Food
+Agora superstore,Food
+Meena Bazar fruits,Food
+Raw fish and vegetables market,Food
+Sultans Dine biryani,Food
+Takeout dinner,Food
+Breakfast cafe,Food
+Uber ride to office,Transport
+Pathao bike ride,Transport
+Uber trip airport,Transport
+Metro rail ticket recharge,Transport
+Bus ticket fare,Transport
+CNG auto rickshaw fare,Transport
+Fuel petrol station,Transport
+Car parking fee,Transport
+Highway toll plaza,Transport
+Train ticket counter,Transport
+House rent payment,Housing
+Apartment monthly rent,Housing
+Home loan mortgage installment,Housing
+Property maintenance service,Housing
+DESCO electricity bill,Utilities
+DPDC prepaid electric token,Utilities
+WASA water utility bill,Utilities
+Titas gas cylinder bill,Utilities
+Broadband internet monthly bill,Utilities
+Link3 fiber internet bill,Utilities
+Grameenphone mobile prepaid recharge,Utilities
+Robi mobile bill payment,Utilities
+Banglalink monthly mobile bill,Utilities
+Daraz online shopping,Shopping
+Amazon delivery order,Shopping
+Aarong clothes and footwear,Shopping
+Bata shoe store,Shopping
+Apex leather shoe,Shopping
+Winter jacket shopping,Shopping
+Electronics gadget purchase,Shopping
+Smart watch accessories,Shopping
+Kitchen cookware set,Shopping
+Books from Rokomari,Shopping
+Netflix monthly subscription,Entertainment
+Spotify music subscription,Entertainment
+YouTube Premium family plan,Entertainment
+Star Cineplex movie tickets,Entertainment
+PlayStation gaming store,Entertainment
+Board games purchase,Entertainment
+Cinema popcorn and drinks,Entertainment
+Gym membership subscription,Health
+Pharmacy medicine purchase,Health
+Labaid hospital doctor consultation,Health
+Square hospital health checkup,Health
+Dental clinic scaling and cleaning,Health
+Eye glasses and lens clinic,Health
+Medical prescription drugs,Health
+University tuition semester fee,Education
+Udemy online web development course,Education
+Coursera specialization subscription,Education
+Textbooks and stationery,Education
+IELTS exam registration fee,Education
+English coaching class monthly fee,Education
+Monthly job salary,Income
+Office salary deposit,Income
+Freelance client payment Upwork,Income
+Fiverr freelance transfer,Income
+Consulting project fees,Income
+Part-time tutoring stipend,Income
+Annual performance bonus,Income
+Dividend from stock investment,Income
+Cashback reward received,Income
+Family allowance deposit,Income
+Mutual fund monthly SIP investment,Investment
+Stock market brokerage deposit,Investment
+National savings certificate Sanchayapatra,Investment
+Fixed deposit interest earned,Income
+ATM cash withdrawal,Other
+Bank service charge fee,Other
+Transfer to friend bKash,Other
+Charity and donation fund,Other
+General personal miscellaneous,Other

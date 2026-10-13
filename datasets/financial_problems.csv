@@ -1,0 +1,52 @@
+text,problemType
+I earn 60000 taka but cannot save 10000 every month,SAVINGS_PROBLEM
+Why am I unable to save money at the end of the month,SAVINGS_PROBLEM
+I have zero savings left despite getting regular salary,SAVINGS_PROBLEM
+My savings are completely stagnant and not growing,SAVINGS_PROBLEM
+How do I build a habit of saving 20 percent of my income,SAVINGS_PROBLEM
+I keep running out of cash before the next payday,SAVINGS_PROBLEM
+Every month my bank account balance drops to zero,SAVINGS_PROBLEM
+I want to buy a 100000 taka laptop within six months,GOAL_PLANNING
+Can I afford an international vacation trip next year,GOAL_PLANNING
+How much should I set aside each month to buy a motorbike in 1 year,GOAL_PLANNING
+Planning to buy a new smartphone worth 45000 in three months,GOAL_PLANNING
+I need to save 200000 for higher education fees by December,GOAL_PLANNING
+Is it realistic to buy a new car within two years with my current salary,GOAL_PLANNING
+I want to start a home renovation goal of 150000 in 8 months,GOAL_PLANNING
+Why am I spending too much money this month,OVERSPENDING
+Food delivery and restaurant expenses are out of control,OVERSPENDING
+I exceeded my shopping budget by 35 percent already,OVERSPENDING
+My expenses are higher than my monthly income this month,OVERSPENDING
+I am overspending on weekend outings and dining,OVERSPENDING
+Where is all my money leaking away so fast,OVERSPENDING
+I blew past my monthly entertainment allowance,OVERSPENDING
+How do I create a realistic monthly budget for a family of three,BUDGET_PLANNING
+Help me set up budget limits for dining out and clothes,BUDGET_PLANNING
+How should I divide my income between needs wants and savings,BUDGET_PLANNING
+Recommend a 50 30 20 budget breakdown for 50000 income,BUDGET_PLANNING
+I need a spending plan for this coming month,BUDGET_PLANNING
+How to adjust my category allocations after getting a salary raise,BUDGET_PLANNING
+Which utility and internet bills are due in the next seven days,BILL_PROBLEM
+I have multiple unpaid electricity and broadband bills coming up,BILL_PROBLEM
+I keep forgetting recurring bill deadlines and get late penalties,BILL_PROBLEM
+My monthly recurring subscription costs are too high,BILL_PROBLEM
+How much total do I need to pay for upcoming bills this week,BILL_PROBLEM
+I cannot afford this month high electricity and gas bill,BILL_PROBLEM
+How can I pay off my credit card debt faster with high interest,DEBT_PROBLEM
+I have an outstanding personal loan balance of 80000 taka,DEBT_PROBLEM
+The monthly loan installment is eating up half of my salary,DEBT_PROBLEM
+Should I prioritize paying off my debt or saving for emergencies,DEBT_PROBLEM
+How long will it take to clear my outstanding bank debt,DEBT_PROBLEM
+I am struggling to manage multiple loans and credit card dues,DEBT_PROBLEM
+My freelance income changes every month how much can I safely spend,VARIABLE_INCOME
+I am a freelancer with irregular earnings how do I budget safely,VARIABLE_INCOME
+Some months I earn 70000 and other months only 25000 what is safe,VARIABLE_INCOME
+How do I handle fixed expenses when client payments are delayed,VARIABLE_INCOME
+Variable income budgeting guide for contract workers and freelancers,VARIABLE_INCOME
+What is my safe baseline spending when earnings fluctuate wildly,VARIABLE_INCOME
+How much money do I need in my emergency fund for 6 months living,EMERGENCY_FUND
+I do not have any cash cushion for medical emergencies or job loss,EMERGENCY_FUND
+How fast can I build a 3 month emergency reserve fund,EMERGENCY_FUND
+Should I touch my emergency fund to pay for an urgent gadget repair,EMERGENCY_FUND
+Calculate my recommended emergency fund target based on my fixed expenses,EMERGENCY_FUND
+My emergency savings got wiped out how do I rebuild it,EMERGENCY_FUND
