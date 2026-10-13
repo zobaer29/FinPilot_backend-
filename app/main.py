@@ -75,3 +75,14 @@ def forecast_spending(request: ForecastRequest) -> ForecastResponse:
         isOverspendRisk=risk,
         method=method,
     )
+
+
+@app.get("/ml/evaluation")
+def get_evaluation() -> dict:
+    import json
+    import os
+    eval_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "models", "evaluation_results.json")
+    if os.path.exists(eval_path):
+        with open(eval_path) as f:
+            return json.load(f)
+    return {"error": "Evaluation results not generated yet"}

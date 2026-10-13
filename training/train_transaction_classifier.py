@@ -3,7 +3,7 @@ import joblib
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import classification_report
+from sklearn.metrics import accuracy_score, precision_recall_fscore_support, confusion_matrix, classification_report
 from sklearn.model_selection import train_test_split
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -19,7 +19,6 @@ def train_transaction_classifier():
     X = df["description"].str.lower().str.strip()
     y = df["category"]
 
-    # Stratify when each class has at least 2 samples
     class_counts = y.value_counts()
     can_stratify = (class_counts >= 2).all()
     stratify = y if can_stratify else None
@@ -39,6 +38,11 @@ def train_transaction_classifier():
     print("\n--- Transaction Classifier Evaluation ---")
     print(classification_report(y_test, y_pred, zero_division=0))
 
+    accuracy = float(accuracy_score(y_test, y_pred))
+    precision, recall, f1, _ = precision_recall_fscore_support(y_test, y_pred, average="weighted", zero_division=0)
+    labels = sorted(list(y.unique()))
+    cm = confusion_matrix(y_test, y_pred, labels=labels).tolist()
+
     # Refit on full dataset for maximum production recall
     X_full_vec = vectorizer.fit_transform(X)
     classifier.fit(X_full_vec, y)
@@ -51,6 +55,19 @@ def train_transaction_classifier():
 
     print(f"Saved vectorizer to: {vectorizer_path}")
     print(f"Saved classifier to: {classifier_path}")
+
+    return {
+        "modelName": "Transaction Category Classifier",
+        "algorithm": "TF-IDF + Logistic Regression (Multinomial)",
+        "datasetSize": len(df),
+        "classesCount": int(df["category"].nunique()),
+        "classes": labels,
+        "accuracy": round(accuracy, 4),
+        "precision": round(float(precision), 4),
+        "recall": round(float(recall), 4),
+        "f1Score": round(float(f1), 4),
+        "confusionMatrix": cm,
+    }
 
 
 if __name__ == "__main__":

@@ -1,0 +1,284 @@
+{
+  "generatedAt": "2026-10-13",
+  "models": {
+    "transactionClassifier": {
+      "modelName": "Transaction Category Classifier",
+      "algorithm": "TF-IDF + Logistic Regression (Multinomial)",
+      "datasetSize": 89,
+      "classesCount": 11,
+      "classes": [
+        "Education",
+        "Entertainment",
+        "Food",
+        "Health",
+        "Housing",
+        "Income",
+        "Investment",
+        "Other",
+        "Shopping",
+        "Transport",
+        "Utilities"
+      ],
+      "accuracy": 0.3333,
+      "precision": 0.25,
+      "recall": 0.3333,
+      "f1Score": 0.25,
+      "confusionMatrix": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    "problemClassifier": {
+      "modelName": "Financial Problem Classifier",
+      "algorithm": "TF-IDF + Logistic Regression",
+      "datasetSize": 51,
+      "classesCount": 8,
+      "classes": [
+        "BILL_PROBLEM",
+        "BUDGET_PLANNING",
+        "DEBT_PROBLEM",
+        "EMERGENCY_FUND",
+        "GOAL_PLANNING",
+        "OVERSPENDING",
+        "SAVINGS_PROBLEM",
+        "VARIABLE_INCOME"
+      ],
+      "accuracy": 0.2727,
+      "precision": 0.3182,
+      "recall": 0.2727,
+      "f1Score": 0.2727,
+      "confusionMatrix": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      ]
+    },
+    "spendingForecast": {
+      "modelName": "Spending Forecast Model",
+      "algorithm": "Ridge Regression with Trend Features",
+      "datasetSize": 30,
+      "mae": 338.25,
+      "rmse": 411.21,
+      "r2Score": 0.9911,
+      "fallbackMechanism": "Deterministic Linear Projection when records < 3"
+    }
+  }
+}

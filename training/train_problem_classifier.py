@@ -3,7 +3,7 @@ import joblib
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import classification_report
+from sklearn.metrics import accuracy_score, precision_recall_fscore_support, confusion_matrix, classification_report
 from sklearn.model_selection import train_test_split
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -38,6 +38,11 @@ def train_problem_classifier():
     print("\n--- Problem Classifier Evaluation ---")
     print(classification_report(y_test, y_pred, zero_division=0))
 
+    accuracy = float(accuracy_score(y_test, y_pred))
+    precision, recall, f1, _ = precision_recall_fscore_support(y_test, y_pred, average="weighted", zero_division=0)
+    labels = sorted(list(y.unique()))
+    cm = confusion_matrix(y_test, y_pred, labels=labels).tolist()
+
     # Refit on full dataset for production accuracy
     X_full_vec = vectorizer.fit_transform(X)
     classifier.fit(X_full_vec, y)
@@ -50,6 +55,19 @@ def train_problem_classifier():
 
     print(f"Saved vectorizer to: {vectorizer_path}")
     print(f"Saved classifier to: {classifier_path}")
+
+    return {
+        "modelName": "Financial Problem Classifier",
+        "algorithm": "TF-IDF + Logistic Regression",
+        "datasetSize": len(df),
+        "classesCount": int(df["problemType"].nunique()),
+        "classes": labels,
+        "accuracy": round(accuracy, 4),
+        "precision": round(float(precision), 4),
+        "recall": round(float(recall), 4),
+        "f1Score": round(float(f1), 4),
+        "confusionMatrix": cm,
+    }
 
 
 if __name__ == "__main__":
